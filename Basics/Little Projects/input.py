@@ -1,0 +1,5 @@
+item = input("Which item do you want ")
+price = float(input("What is the price "))
+quanitiy = int(input("How many "))
+total_cost = float(price * quanitiy)
+print(f"Total price for {item} is {total_cost }")
