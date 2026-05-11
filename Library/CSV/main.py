@@ -1,12 +1,11 @@
+import csv
 students = []
 with open("text.csv") as file:
-    for x in file:
-        name, house = x.rstrip().split(",")
-        student = {
-            "name": name, 
-            "house": house
-        }
-        students.append(student)
+    reader = csv.DictReader(file)
+    for x in reader:
+        students.append({"name": x[0], "home": x[1]})
 
-for student in (students):
-    print(f"{student['name']} is in {student['house']}")
+
+
+for student in sorted(students, key=lambda student: student["name"]):
+    print(f"{student['name']} is in {student['home']}")
