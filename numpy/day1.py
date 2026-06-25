@@ -79,3 +79,28 @@ np.random.seed(5) #starting point, if you decide seed (any number) it will alway
 print(np.random.rand(3)) # review
 
 dataset = np.random.rand(100, 3) #creates random dataset with 100 rows, 3 columns 
+
+
+"""Types"""
+print(e.dtype)
+g = np.array([1, 3, 5], dtype=float) #dtype is just the type
+print(g)
+
+"""Filtering (if statements basically)"""
+
+h = np.array([1, 2, 3, 4, 5, 6])
+print(h>3) #prints true/false, if you add h[h>3], it will print the actual values
+
+"""Combine"""
+i = np.array([
+    [1, 2, 3],
+    [7, 8, 9]
+])
+j = np.array([
+    [4, 5, 6],
+    [10, 11, 12]
+])
+# print(np.concatenate([i, j])) # 1d combine
+
+print(np.vstack([i, j]))  #2d combine vertical
+print(np.hstack([i, j])) # 2d combine, horizontal
