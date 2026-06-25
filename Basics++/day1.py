@@ -28,7 +28,7 @@ print(arrays[-1])
 print(multi_array[0, 2])
 
 """1D Slicing"""
-print(arrays[1::2]) #start:end:step
+print(arrays[1::2]) #start:end(exclude):step
 
 """2D Slicing"""
 print(multi_array[:, 0]) #rows, columns
@@ -53,3 +53,29 @@ d = np.array([
 print(np.sum(d)) #sum of all elements
 print(np.sum(d, axis = 1)) #0 = sum by columns, 1 sum by rows
 
+
+"""Reshape"""
+e = np.array([1, 2, 3, 4, 5, 6])
+print(e) 
+f = e.reshape(2, 3) 
+#-1, is like auto like CSS(10% 10% auto), except using -1 instead of auto
+#x.reshape(rows, columns)
+print(f)
+
+"""Random"""
+
+random0 = np.random.rand() # random 0-1 decimal,
+random1= np.random.rand(5) #the 5 generates 5 random numbers
+random2 = np.random.rand(5, 3) #generates a 5 by 3 (15) random numbers 0-1
+random3 = np.random.randint(1, 10, 5) #low, high(exclude), size --> could print smth like 3, 7, 9, 1, 4
+random4 = np.random.randint(1, 10, (2, 3)) # same thing by 2D so 2 by 3 box with 6 random ints from 1-9
+
+np.random.choice(e, 3) #selects random choice from array, or 3
+np.random.choice(e, 3, replace=False) #choices cannot be repeated b/c replace =False
+np.random.shuffle(e) #randomizes e and modifies the orginaol array
+np.random.randn(5) #generates numbers around 0, 5 times
+
+np.random.seed(5) #starting point, if you decide seed (any number) it will always geenrate the same random number
+print(np.random.rand(3)) # review
+
+dataset = np.random.rand(100, 3) #creates random dataset with 100 rows, 3 columns 
