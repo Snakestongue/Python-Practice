@@ -22,3 +22,5 @@ A basic project that saves content to a .txt file.
   - Type hinting 
   - Using sys
   - Using Random
+  - Numpy
+  - PyGame Basics
