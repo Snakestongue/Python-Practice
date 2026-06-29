@@ -1,24 +1,25 @@
 import pandas as pd
 df = pd.read_csv("pandas/employee.csv")
-print(df.head()) # prints first 5 rows
+print(df.head()) # prints first 5 rows, also can put a number for tails too
 print(df.tail()) # prints last 5 rows
-
-print(df.describe())#states like mean & count and other stats stuff
+ 
+print(df.describe())#states like mean & count and other stats stuff (statistics)
 print(df.dtypes) # states data types for columns
 print(df.shape) #prints rows, columns
 print(df.columns) #prints the column titiles along with the datatype
-print(df.info()) #summary + nice format of your csv
+print(df.info()) #summary + nice format of your csv (structure)
 
 x = df[["city", "age"]] #selects columns
 y = df["salary"]
 
 z = df.iloc[0:5] # selects rows by position (0-5)
+rc = df.iloc[:, 2:4] #rows, columns, all rows, columns 2-3 in the example
 
 """Rename"""
 df.rename(
     columns={
         "age": "Age" # old-->new
-    },
+    },  
     inplace=True #--> used to change df (not the csv), most don't use it, usually just save it to new variable.
 )
 #print(df)
@@ -46,4 +47,4 @@ df.drop("tax", axis=1) # removes tax column
 df.groupby("city")["salary"].mean() #groups city/salary together and finds the mean of salary in each city
 
 """Stats"""
-df["salary"].mean() # finds the mean, max, min, sum can also be used
+df["salary"].mean() # finds the mean, max, min, sum, size, first, last can also be used
