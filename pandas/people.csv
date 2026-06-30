@@ -1,0 +1,21 @@
+id,name,age,email,join_date,department,salary
+1,Alice Johnson,29,alice.johnson@example.com,2024-01-15,Sales,65000
+2,Bob Smith,34,bob.smith@example.com,2024-02-01,Engineering,85000
+3,Charlie Brown,,charlie.brown@example.com,2024-03-12,Marketing,72000
+4,Diana Prince,-5,diana.prince@example.com,2024-04-05,HR,68000
+5,Eric Adams,41,eric.adams@example,2024-05-18,Finance,90000
+6,Fiona Green,27,fiona.green@example.com,05/20/2024,Engineering,81000
+7,George White,38,george.white@example.com,2024-06-11,engineering,83000
+8,Hannah Lee,31,hannah.lee@example.com,2024-07-01,Sales,
+9,Ian Black,45,ian.black@example.com,2024-08-09,Finance,105000
+10,Julia King,28,julia.king@example.com,2024-09-15,Marketing,70000
+10,Julia King,28,julia.king@example.com,2024-09-15,Marketing,70000
+12, Kevin Hart ,36,kevin.hart@example.com,2024-10-01,HR,76000
+13,Lisa Wong,abc,lisa.wong@example.com,2024-11-20,Sales,67000
+14,Michael Scott,44,michael.scott@example.com,2024/12/01,Management,95000
+15,Nina Patel,30,,2025-01-10,Engineering,88000
+16,Oscar Reed,39,oscar.reed@example.com,2025-02-14,Finance,9999999
+17,Paula Young,26,paula.young@example.com,2025-03-18,Sales,64000
+18,Raj Kumar,32,raj.kumar@example.com,2025-04-22,,78000
+19,Sarah Connor,29,sarah.connor@example.com,2025-05-30,Marketing,70000
+20,Tom Harris,35,tom.harris@example.com,2025-06-15,HR,75000

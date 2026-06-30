@@ -29,7 +29,7 @@ df.columns = df.columns.str.replace(" ", "_") # replaces spaces with _
 print(df.columns)
 
 """Missing Values"""
-df.isnull().sum() # shows total missing values
+df.isnull().sum() # shows total missing values, also can use isna()
 df.dropna(inplace=True) #Removes missing rows
 df["age"] = df["age"].fillna(df["age"].mean())#Fills missing values with the avergae
 
