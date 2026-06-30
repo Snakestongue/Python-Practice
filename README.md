@@ -3,6 +3,9 @@ A collection of my Python projects I’ve built while learning and practicing fu
 
 ## Projects
 
+### Final Exam Score Prediction
+A project combining numpy, pandas, matplotlib and scikit where a model is trained to predict final scores based off numerous features.
+
 ### Password Checker
 A program that checks how strong a password is.
 
@@ -22,5 +25,8 @@ A basic project that saves content to a .txt file.
   - Type hinting 
   - Using sys
   - Using Random
-  - Numpy
   - PyGame Basics
+  - Numpy
+  - Pandas
+  - Matplotlib
+  - Scikit
