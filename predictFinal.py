@@ -40,23 +40,23 @@ df = df[df["Sleep"]>0]
 df = df[df["Att"]<101]
 
 """NUMPY"""
-print("The mean of the dataset is: ", np.mean(df["Final"]))
-print("The median of the dataset is: ",np.median(df["Final"]))
-print("The variance of the dataset is: ",np.var(df["Final"]))
-print("The Standard Deviation of the dataset is: ",np.std(df["Final"]))
-print("The 25 Percentile of the dataset is: ",np.percentile(df["Final"], 25))
-print("The 50 Percentile of the dataset is: ",np.percentile(df["Final"], 50))
-print("The 75 Percentile of the dataset is: ",np.percentile(df["Final"], 75))
-print(np.round(np.corrcoef(df["Att"], df["Final"]), 2)) # Correlation
-print(np.round(np.corrcoef(df["Study_hours"], df["Final"]),2))
+# print("The mean of the dataset is: ", np.mean(df["Final"]))
+# print("The median of the dataset is: ",np.median(df["Final"]))
+# print("The variance of the dataset is: ",np.var(df["Final"]))
+# print("The Standard Deviation of the dataset is: ",np.std(df["Final"]))
+# print("The 25 Percentile of the dataset is: ",np.percentile(df["Final"], 25))
+# print("The 50 Percentile of the dataset is: ",np.percentile(df["Final"], 50))
+# print("The 75 Percentile of the dataset is: ",np.percentile(df["Final"], 75))
+# print(np.round(np.corrcoef(df["Att"], df["Final"]), 2)) # Correlation
+# print(np.round(np.corrcoef(df["Study_hours"], df["Final"]),2))
 
 """PANDAS"""
 df = df.sort_values("Final", ascending=False)
-print(df.head(10))
-print(df.tail(5))
-print(df["Stress"].mean())
-print(df.groupby("Stress")["Final"].mean())
-print(df.groupby("Att")["Final"].mean())
+# print(df.head(10))
+# print(df.tail(5))
+# print(df["Stress"].mean())
+# print(df.groupby("Stress")["Final"].mean())
+# print(df.groupby("Att")["Final"].mean())
 
 """Matplotlab"""
 plt.figure()
@@ -78,7 +78,7 @@ plt.xlabel("Stress Level")
 plt.ylabel("Final Score")
 plt.title("Stress affecting Final Scores")
 
-plt.show()
+#plt.show()
 
 """SCIKIT"""
 X = df[[
