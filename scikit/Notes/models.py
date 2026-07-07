@@ -27,7 +27,7 @@ predict = pipeline.predict(xTest)
 #become perfect instantly
 
 """Ridge"""
-ridge =  Ridge(alpha=1.0)
+ridge =  Ridge(alpha=1.0) # regularization level
 ridge.fit(xTrain, yTrain)
 ridge.predict(xTest)
 #fit data wel but massive weights are NO GOOD
