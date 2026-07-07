@@ -6,15 +6,17 @@ A collection of my Python projects I’ve built while learning and practicing fu
 ### Final Exam Score Prediction
 A project combining numpy, pandas, matplotlib and scikit where a model is trained to predict final scores based off numerous features.
 
-Location: scikit --> Projects --> predictFinal.py & students.csv
+[View Project](scikit/Projects/predictFinal.py)
 
 ### Student Performance Project 
 A project that combines different regression models & scalers in scikit to find the best performing model and scaler combination for predicting student performance.
 
-Location: scikit --> Projects --> studentPerformance.py & studentPerformance.csv
+[View Project](scikit/Projects/studentPerformance.py)
 
 ### Password Checker
 A program that checks how strong a password is.
+
+[View Project](Basics+/BigProjects/password.py)
 
 Location: Basics+ --> Big Projects --> password.py
 
