@@ -1,6 +1,8 @@
 # Python Practice Projects
 A collection of my Python projects I’ve built while learning and practicing fundamentals. These projects are small and just for my learning.
 
+*Starting 07/27/2026 I will be using Jupyter Notebook for notes*
+
 ## Projects
 
 ### Final Exam Score Prediction
