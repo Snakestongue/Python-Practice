@@ -2,14 +2,16 @@ import random
 lists = ["program", "java", "python", "coding", "computer"]
 word = random.choice(lists)
 guessed_letters = set() 
-lives = 6
+"""
+A set is a type of dataset unique to python. It allows no duplicates & is unordered (can't use indexing)!
+"""
+lives = 5
 while lives > 0:
     for letter in word:
         if letter in guessed_letters:
-            print(letter, end=" ")
+            print(letter, end=" ") #Instead of ending on a newline, just end on a space!
         else:
             print("_", end=" ")
-    print() 
     won = True
     for letter in word:
         if letter not in guessed_letters:
@@ -27,7 +29,7 @@ while lives > 0:
         continue
     guessed_letters.add(inp)
     if inp in word:
-        print(f"Correct! The letter {inp} is in the word!"+ "You have",lives,"lives left")
+        print(f"Correct! The letter {inp} is in the word!"+ " You have",lives,"lives left")
     else:
         lives -= 1
         print(f"Incorrect! You have {lives} lives left.")
